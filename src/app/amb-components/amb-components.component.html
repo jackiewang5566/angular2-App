@@ -1,0 +1,12 @@
+<div >
+  <tabset>
+    <tab *ngFor="let tabz of tabs"
+         [heading]="tabz.title"
+         [active]="tabz.active"
+         (select)="goToRoute(tabz)"
+         >
+    </tab>
+  <router-outlet></router-outlet>
+  </tabset>
+</div>
+

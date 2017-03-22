@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <accordion>
+    <accordion-group heading="Static Header, initially expanded"
+                     [panelClass]="panelHeader"
+                     [isOpen]="true" [isDisabled]="true">
+
+      <app-smart-table [source]="source" [settings]="settings"></app-smart-table>
+      {{source|json}}
+
+    </accordion-group>
+  </accordion>
+</div>
+
+
